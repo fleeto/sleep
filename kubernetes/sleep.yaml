@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: dustise/sleep
+        image: dustise/sleep:v0.6
         imagePullPolicy: IfNotPresent
 ---

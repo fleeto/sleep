@@ -14,7 +14,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: sleep
+  name: sleep-v1
 spec:
   replicas: 1
   template:
@@ -28,3 +28,19 @@ spec:
         image: dustise/sleep
         imagePullPolicy: IfNotPresent
 ---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sleep-v2
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sleep
+        version: v2
+    spec:
+      containers:
+      - name: sleep
+        image: dustise/sleep
+        imagePullPolicy: IfNotPresent

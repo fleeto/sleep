@@ -26,7 +26,7 @@ spec:
       containers:
       - name: sleep
         image: dustise/sleep
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -43,4 +43,4 @@ spec:
       containers:
       - name: sleep
         image: dustise/sleep
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always

@@ -4,4 +4,4 @@ RUN apk add  dnstracer curl wrk vim tcptraceroute iptables httpie bash tini --up
     curl -L -s https://github.com/BuoyantIO/slow_cooker/releases/download/1.1.0/slow_cooker_linux_amd64 -o /usr/local/bin/slow_cooker && \
     chmod a+x /usr/local/bin/* 
 
-CMD ["sleep", "1d"]
+CMD ["tini", "sleep", "1d"]

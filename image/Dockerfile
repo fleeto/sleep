@@ -1,5 +1,5 @@
 FROM alpine:3.12.0
-RUN apk add dnstracer curl wrk vim \
+RUN apk add bind-tools curl wrk vim \
     tcptraceroute iptables httpie bash \
     tini apache2-utils --update && \
     curl -s https://pkg.cfssl.org/R1.2/cfssl_linux-amd64 -o /usr/local/bin/cfssl && \

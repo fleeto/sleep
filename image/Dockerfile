@@ -1,4 +1,4 @@
-FROM alpine:3.12.1
+FROM alpine:3.13.5
 RUN apk add bind-tools curl wrk vim \
     tcptraceroute iptables httpie bash \
     tini apache2-utils stress-ng strace --update && \
